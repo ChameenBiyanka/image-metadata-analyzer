@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Metadata Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <meta name="description" content="Free online tool to analyze and view metadata from your images">
+    <script src="lib/exif.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Metadata Analyzer</h1>
+            <p>Upload an image to extract and view its metadata</p>
+        </header>
+        
+        <main>
+            <div class="upload-area" id="dropArea">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.5 11.5a.5.5 0 0 1-1 0V7.707L6.354 8.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 7.707V11.5z"/>
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                </svg>
+                <p>Drag & drop your image here or click to browse</p>
+                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            </div>
+            
+            <div class="results" id="results">
+                <h2>Metadata Results</h2>
+                <div class="image-preview" id="imagePreview"></div>
+                <div class="metadata-table" id="metadataTable"></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© <span id="year"></span> Image Metadata Analyzer | Free Online Tool</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
