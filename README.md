@@ -22,7 +22,7 @@ A simple web-based tool to analyze and view metadata from uploaded images.
 1. Upload all files to a GitHub repository
 2. Go to repository Settings > Pages
 3. Select the main branch and click Save
-4. Your site will be published at `https://[username].github.io/[repository-name]/`
+4. Site will be published
 
 ### Wix.com
 
@@ -44,4 +44,5 @@ A simple web-based tool to analyze and view metadata from uploaded images.
 
 - Integrate a proper EXIF library for more comprehensive metadata extraction
 - Add support for batch processing
+
 - Include more detailed image analysis
